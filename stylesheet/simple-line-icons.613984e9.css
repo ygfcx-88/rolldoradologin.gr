@@ -1,0 +1,778 @@
+@font-face {
+  font-family: 'simple-line-icons';
+  src: url('../fonts/Simple-Line-Icons.eot?v=2.4.0');
+  src: url('../fonts/Simple-Line-Icons.eot?v=2.4.0#iefix') format('embedded-opentype'), url('../fonts/Simple-Line-Icons.woff2?v=2.4.0') format('woff2'), url('../fonts/Simple-Line-Icons.ttf?v=2.4.0') format('truetype'), url('../fonts/Simple-Line-Icons.woff?v=2.4.0') format('woff'), url('../fonts/Simple-Line-Icons.svg?v=2.4.0#simple-line-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+ Use the following CSS code if you want to have a class per icon.
+ Instead of a list of all class selectors, you can use the generic [class*="icon-"] selector, but it's slower:
+*/
+.icon-user_b5fe9d66b8c05ce0,
+.icon-people_cf2a0de4b707f06e,
+.icon-user-female_a2e8d6b12dc27b41,
+.icon-user-follow_93a51755a3fc89dd,
+.icon-user-following_8ea738f1048c8a67,
+.icon-user-unfollow_2dc578161ad96bd4,
+.icon-login_77022054627fd89f,
+.icon-logout_918adb3231f54800,
+.icon-emotsmile_24237d108bc86658,
+.icon-phone_653ee6f846c05659,
+.icon-call-end_d112aa491b3b11c5,
+.icon-call-in_57ffd89f73d41fae,
+.icon-call-out_9f8210a4fee90628,
+.icon-map_4f76849d5a3a36bf,
+.icon-location-pin_e63450a27c6c9514,
+.icon-direction_a38ef1db6356c851,
+.icon-directions_e4b117b04f3feab2,
+.icon-compass_b91894e3fdb45347,
+.icon-layers_92fbec8b6323bf04,
+.icon-menu_b26ca44ddb0250ae,
+.icon-list_838ae05e75c60481,
+.icon-options-vertical_2388cc2f3ea20ee0,
+.icon-options_fc579af0e6664738,
+.icon-arrow-down,
+.icon-arrow-left_281fd1881ee8c7ca,
+.icon-arrow-right_add4766d97565ab1,
+.icon-arrow-up_f5a97d0057f18cc4,
+.icon-arrow-up-circle_7216df0ab260c24e,
+.icon-arrow-left-circle_6b42bbac64d77557,
+.icon-arrow-right-circle_18765ba33df7a6b7,
+.icon-arrow-down-circle_f83af76d1d1160c5,
+.icon-check_8b29d2c03482f0b7,
+.icon-clock_238d5eea6c091c83,
+.icon-plus_10f7e40be06ddaa2,
+.icon-minus_4e5dfa045caa51ab,
+.icon-close_b4add2b6533b3875,
+.icon-event_5e3688b8cf6ef16f,
+.icon-exclamation_9029ecb17c84d789,
+.icon-organization_04039aa90c8199f2,
+.icon-trophy_0ca3e1feb352c477,
+.icon-screen-smartphone_8cc8123a1a9b91a2,
+.icon-screen-desktop_6338016a5bb88b9e,
+.icon-plane_4726a491d7d61cae,
+.icon-notebook_5a4a8837ed4b55ad,
+.icon-mustache_7dc507a171b36082,
+.icon-mouse_51518e131ff47f0f,
+.icon-magnet_15ce9b166ea72bc9,
+.icon-energy_6849c86112635d6a,
+.icon-disc_e858781fea55414c,
+.icon-cursor_90450121c0624058,
+.icon-cursor-move_069842cb0ff77725,
+.icon-crop_efa9e2ff5ef08e2f,
+.icon-chemistry_5ecdc79e536c62f1,
+.icon-speedometer_460d0e551c0a0c61,
+.icon-shield_b69e2637114dcd57,
+.icon-screen-tablet_ee5d07a4e6a934d2,
+.icon-magic-wand_91880504b9d489af,
+.icon-hourglass_4023719bf93bbfda,
+.icon-graduation_abb15790d6997fed,
+.icon-ghost_383873cd015fde97,
+.icon-game-controller_b197d1d158881e82,
+.icon-fire_cdda6f8d2b1e4dea,
+.icon-eyeglass_e44dc6291425fddb,
+.icon-envelope-open_fb8c25b765abb876,
+.icon-envelope-letter_abe01ac42a087a74,
+.icon-bell_a2e695be69ac2753,
+.icon-badge_d5cffe30a62adc4d,
+.icon-anchor_17d63060abd3308e,
+.icon-wallet_a4969dbf19451d2d,
+.icon-vector_10c94412c5cc1ea2,
+.icon-speech_f88507897f53b798,
+.icon-puzzle_dd565b41c71054aa,
+.icon-printer_021d40cc90133d38,
+.icon-present_c780098d256dac6a,
+.icon-playlist_a14a42d09a878d7e,
+.icon-pin_a6b7b00a598ad049,
+.icon-picture_bf9a06a4e428249c,
+.icon-handbag_6e642cdc10a063c0,
+.icon-globe-alt_a08d1fe5e4ec4739,
+.icon-globe_57ac37c59a4d2675,
+.icon-folder-alt_6ac88fce1aece36a,
+.icon-folder_f4496c6ce0e578fd,
+.icon-film_3dd7f2dcf47855d4,
+.icon-feed_df146aa95c196224,
+.icon-drop_3e30c19b455a7877,
+.icon-drawer_d370386e49d242ad,
+.icon-docs_42dc16cef5a8ecaf,
+.icon-doc_6f56882a3cb1e14c,
+.icon-diamond_046e0dc6f23185c2,
+.icon-cup_9a37ba56667d177b,
+.icon-calculator_63ba0632600a9222,
+.icon-bubbles_c426c4f04cc77ef8,
+.icon-briefcase_a85f6981b2f09c10,
+.icon-book-open_15fd8f5d7495c0aa,
+.icon-basket-loaded_25661517cd14624e,
+.icon-basket_29f94fbd202f30e7,
+.icon-bag_8674e52b3ceeddb0,
+.icon-action-undo_5b3b2dd36b9bdb6e,
+.icon-action-redo_c5023f5fd4a7e716,
+.icon-wrench_483677169453923a,
+.icon-umbrella_6c4e7bb4f152a6d7,
+.icon-trash_a62c3e11fcdea5f5,
+.icon-tag_e7ebbe14a04956dc,
+.icon-support_e7471bd68619b6cb,
+.icon-frame_fbf661953e579a66,
+.icon-size-fullscreen_38ca8ffcba8dfb8a,
+.icon-size-actual_31a580653d3c13b6,
+.icon-shuffle_5752d4d6a6752a7b,
+.icon-share-alt_bb4be2a5abcb2f7a,
+.icon-share_2ebb6bcb76c91d92,
+.icon-rocket_9b81fecb03626431,
+.icon-question_e31d7bc54f545b98,
+.icon-pie-chart_7073479aebf2bc05,
+.icon-pencil_efd2687efbb07188,
+.icon-note_6360e6e3ed6d6c04,
+.icon-loop_c7afca3119e01392,
+.icon-home_6e7ad9cfdce85dbd,
+.icon-grid_4c945b5123f455c5,
+.icon-graph_7ed6c6bec615e0a1,
+.icon-microphone_b9afd6da50923b26,
+.icon-music-tone-alt_2f84626c2e6eff90,
+.icon-music-tone_3f3741de35ad5e0d,
+.icon-earphones-alt_4d7b2d874ff55cf8,
+.icon-earphones_06eeb0a76e637aa6,
+.icon-equalizer_1086bcc2696fcb25,
+.icon-like_c1da0677b3dcb0e1,
+.icon-dislike_612554437a59b6b4,
+.icon-control-start_3dfcb774232d2b97,
+.icon-control-rewind_68eab29b525f4f3c,
+.icon-control-play_05afaf95793cea0b,
+.icon-control-pause_b5ee284ac2a39be9,
+.icon-control-forward_a4ab5ceb89e2c35d,
+.icon-control-end_fa9fe175ed99dab1,
+.icon-volume-1_b9edc81e9d00d2d3,
+.icon-volume-2_71cacd31057e69e6,
+.icon-volume-off_6a2d0a85aa33ac51,
+.icon-calendar_4aef0d2150e3e1ac,
+.icon-bulb_eb7ea8ee582e71d4,
+.icon-chart_0f19c55cacdd13e7,
+.icon-ban_04ebe2b628707f5c,
+.icon-bubble_d82ca6878d37d74d,
+.icon-camrecorder_49229613c7d3c597,
+.icon-camera_d9107fcaa37ba43d,
+.icon-cloud-download_78cf3e6217db9061,
+.icon-cloud-upload_b86b2ea7fb424b74,
+.icon-envelope_bc8062277638115a,
+.icon-eye_02e0aa9752eada56,
+.icon-flag_9ccda411afc81b12,
+.icon-heart_220f8aab26c42c86,
+.icon-info_4d71e0c198058e34,
+.icon-key_a73fb2e2d8324a5e,
+.icon-link_54a6f6beb68660d8,
+.icon-lock_78a57362f32a2f54,
+.icon-lock-open_cd0844f193cc8b86,
+.icon-magnifier_f2b83fbf3f9eede2,
+.icon-magnifier-add_966f66ccccd2cdbe,
+.icon-magnifier-remove_af3e3bfbe678845f,
+.icon-paper-clip_db4f6821c544d3b1,
+.icon-paper-plane_c8e7acebe9bf79de,
+.icon-power_2d65a2ec271439cb,
+.icon-refresh_1410ddd8d75b804e,
+.icon-reload_2c237bf5161a84ca,
+.icon-settings_54eb9a9f97fae1bf,
+.icon-star_b0e32fffaa927210,
+.icon-symbol-female_896637df2fb496e9,
+.icon-symbol-male_955608577a3600fb,
+.icon-target_ae100e13875d0f7d,
+.icon-credit-card_86c4dfb9cfcd769e,
+.icon-paypal_8581b228186e06d6,
+.icon-social-tumblr_3f8f4a4b6f69bbc0,
+.icon-social-twitter_2fd9f4e4da49e1ee,
+.icon-social-facebook_1c28bf9047d8f163,
+.icon-social-instagram_1fb376fc2ddfa732,
+.icon-social-linkedin_636d60ac8d26c929,
+.icon-social-pinterest_3ad241dc271d3547,
+.icon-social-github_2198e9c3c2c00c2f,
+.icon-social-google_969028dc34ba1c39,
+.icon-social-reddit_6963ebb619a96593,
+.icon-social-skype_ef142ad7988ff568,
+.icon-social-dribbble_387cc6168dfe57c3,
+.icon-social-behance_0e90a6cc3c6da63d,
+.icon-social-foursqare_f172225456a83cb1,
+.icon-social-soundcloud_bb5ef39455390463,
+.icon-social-spotify_6eafd6434895bb56,
+.icon-social-stumbleupon_19f4214f9debd221,
+.icon-social-youtube_b42bde2f5cdc09db,
+.icon-social-dropbox_f3bbe3d10c95ce06,
+.icon-social-vkontakte_6ad10cf75e6324f6,
+.icon-social-steam_97a1a5f3a5aa5e82 {
+  font-family: 'simple-line-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-user_b5fe9d66b8c05ce0:before {
+  content: "\e005";
+}
+.icon-people_cf2a0de4b707f06e:before {
+  content: "\e001";
+}
+.icon-user-female_a2e8d6b12dc27b41:before {
+  content: "\e000";
+}
+.icon-user-follow_93a51755a3fc89dd:before {
+  content: "\e002";
+}
+.icon-user-following_8ea738f1048c8a67:before {
+  content: "\e003";
+}
+.icon-user-unfollow_2dc578161ad96bd4:before {
+  content: "\e004";
+}
+.icon-login_77022054627fd89f:before {
+  content: "\e066";
+}
+.icon-logout_918adb3231f54800:before {
+  content: "\e065";
+}
+.icon-emotsmile_24237d108bc86658:before {
+  content: "\e021";
+}
+.icon-phone_653ee6f846c05659:before {
+  content: "\e600";
+}
+.icon-call-end_d112aa491b3b11c5:before {
+  content: "\e048";
+}
+.icon-call-in_57ffd89f73d41fae:before {
+  content: "\e047";
+}
+.icon-call-out_9f8210a4fee90628:before {
+  content: "\e046";
+}
+.icon-map_4f76849d5a3a36bf:before {
+  content: "\e033";
+}
+.icon-location-pin_e63450a27c6c9514:before {
+  content: "\e096";
+}
+.icon-direction_a38ef1db6356c851:before {
+  content: "\e042";
+}
+.icon-directions_e4b117b04f3feab2:before {
+  content: "\e041";
+}
+.icon-compass_b91894e3fdb45347:before {
+  content: "\e045";
+}
+.icon-layers_92fbec8b6323bf04:before {
+  content: "\e034";
+}
+.icon-menu_b26ca44ddb0250ae:before {
+  content: "\e601";
+}
+.icon-list_838ae05e75c60481:before {
+  content: "\e067";
+}
+.icon-options-vertical_2388cc2f3ea20ee0:before {
+  content: "\e602";
+}
+.icon-options_fc579af0e6664738:before {
+  content: "\e603";
+}
+.icon-arrow-down:before {
+  content: "\e604";
+}
+.icon-arrow-left_281fd1881ee8c7ca:before {
+  content: "\e605";
+}
+.icon-arrow-right_add4766d97565ab1:before {
+  content: "\e606";
+}
+.icon-arrow-up_f5a97d0057f18cc4:before {
+  content: "\e607";
+}
+.icon-arrow-up-circle_7216df0ab260c24e:before {
+  content: "\e078";
+}
+.icon-arrow-left-circle_6b42bbac64d77557:before {
+  content: "\e07a";
+}
+.icon-arrow-right-circle_18765ba33df7a6b7:before {
+  content: "\e079";
+}
+.icon-arrow-down-circle_f83af76d1d1160c5:before {
+  content: "\e07b";
+}
+.icon-check_8b29d2c03482f0b7:before {
+  content: "\e080";
+}
+.icon-clock_238d5eea6c091c83:before {
+  content: "\e081";
+}
+.icon-plus_10f7e40be06ddaa2:before {
+  content: "\e095";
+}
+.icon-minus_4e5dfa045caa51ab:before {
+  content: "\e615";
+}
+.icon-close_b4add2b6533b3875:before {
+  content: "\e082";
+}
+.icon-event_5e3688b8cf6ef16f:before {
+  content: "\e619";
+}
+.icon-exclamation_9029ecb17c84d789:before {
+  content: "\e617";
+}
+.icon-organization_04039aa90c8199f2:before {
+  content: "\e616";
+}
+.icon-trophy_0ca3e1feb352c477:before {
+  content: "\e006";
+}
+.icon-screen-smartphone_8cc8123a1a9b91a2:before {
+  content: "\e010";
+}
+.icon-screen-desktop_6338016a5bb88b9e:before {
+  content: "\e011";
+}
+.icon-plane_4726a491d7d61cae:before {
+  content: "\e012";
+}
+.icon-notebook_5a4a8837ed4b55ad:before {
+  content: "\e013";
+}
+.icon-mustache_7dc507a171b36082:before {
+  content: "\e014";
+}
+.icon-mouse_51518e131ff47f0f:before {
+  content: "\e015";
+}
+.icon-magnet_15ce9b166ea72bc9:before {
+  content: "\e016";
+}
+.icon-energy_6849c86112635d6a:before {
+  content: "\e020";
+}
+.icon-disc_e858781fea55414c:before {
+  content: "\e022";
+}
+.icon-cursor_90450121c0624058:before {
+  content: "\e06e";
+}
+.icon-cursor-move_069842cb0ff77725:before {
+  content: "\e023";
+}
+.icon-crop_efa9e2ff5ef08e2f:before {
+  content: "\e024";
+}
+.icon-chemistry_5ecdc79e536c62f1:before {
+  content: "\e026";
+}
+.icon-speedometer_460d0e551c0a0c61:before {
+  content: "\e007";
+}
+.icon-shield_b69e2637114dcd57:before {
+  content: "\e00e";
+}
+.icon-screen-tablet_ee5d07a4e6a934d2:before {
+  content: "\e00f";
+}
+.icon-magic-wand_91880504b9d489af:before {
+  content: "\e017";
+}
+.icon-hourglass_4023719bf93bbfda:before {
+  content: "\e018";
+}
+.icon-graduation_abb15790d6997fed:before {
+  content: "\e019";
+}
+.icon-ghost_383873cd015fde97:before {
+  content: "\e01a";
+}
+.icon-game-controller_b197d1d158881e82:before {
+  content: "\e01b";
+}
+.icon-fire_cdda6f8d2b1e4dea:before {
+  content: "\e01c";
+}
+.icon-eyeglass_e44dc6291425fddb:before {
+  content: "\e01d";
+}
+.icon-envelope-open_fb8c25b765abb876:before {
+  content: "\e01e";
+}
+.icon-envelope-letter_abe01ac42a087a74:before {
+  content: "\e01f";
+}
+.icon-bell_a2e695be69ac2753:before {
+  content: "\e027";
+}
+.icon-badge_d5cffe30a62adc4d:before {
+  content: "\e028";
+}
+.icon-anchor_17d63060abd3308e:before {
+  content: "\e029";
+}
+.icon-wallet_a4969dbf19451d2d:before {
+  content: "\e02a";
+}
+.icon-vector_10c94412c5cc1ea2:before {
+  content: "\e02b";
+}
+.icon-speech_f88507897f53b798:before {
+  content: "\e02c";
+}
+.icon-puzzle_dd565b41c71054aa:before {
+  content: "\e02d";
+}
+.icon-printer_021d40cc90133d38:before {
+  content: "\e02e";
+}
+.icon-present_c780098d256dac6a:before {
+  content: "\e02f";
+}
+.icon-playlist_a14a42d09a878d7e:before {
+  content: "\e030";
+}
+.icon-pin_a6b7b00a598ad049:before {
+  content: "\e031";
+}
+.icon-picture_bf9a06a4e428249c:before {
+  content: "\e032";
+}
+.icon-handbag_6e642cdc10a063c0:before {
+  content: "\e035";
+}
+.icon-globe-alt_a08d1fe5e4ec4739:before {
+  content: "\e036";
+}
+.icon-globe_57ac37c59a4d2675:before {
+  content: "\e037";
+}
+.icon-folder-alt_6ac88fce1aece36a:before {
+  content: "\e039";
+}
+.icon-folder_f4496c6ce0e578fd:before {
+  content: "\e089";
+}
+.icon-film_3dd7f2dcf47855d4:before {
+  content: "\e03a";
+}
+.icon-feed_df146aa95c196224:before {
+  content: "\e03b";
+}
+.icon-drop_3e30c19b455a7877:before {
+  content: "\e03e";
+}
+.icon-drawer_d370386e49d242ad:before {
+  content: "\e03f";
+}
+.icon-docs_42dc16cef5a8ecaf:before {
+  content: "\e040";
+}
+.icon-doc_6f56882a3cb1e14c:before {
+  content: "\e085";
+}
+.icon-diamond_046e0dc6f23185c2:before {
+  content: "\e043";
+}
+.icon-cup_9a37ba56667d177b:before {
+  content: "\e044";
+}
+.icon-calculator_63ba0632600a9222:before {
+  content: "\e049";
+}
+.icon-bubbles_c426c4f04cc77ef8:before {
+  content: "\e04a";
+}
+.icon-briefcase_a85f6981b2f09c10:before {
+  content: "\e04b";
+}
+.icon-book-open_15fd8f5d7495c0aa:before {
+  content: "\e04c";
+}
+.icon-basket-loaded_25661517cd14624e:before {
+  content: "\e04d";
+}
+.icon-basket_29f94fbd202f30e7:before {
+  content: "\e04e";
+}
+.icon-bag_8674e52b3ceeddb0:before {
+  content: "\e04f";
+}
+.icon-action-undo_5b3b2dd36b9bdb6e:before {
+  content: "\e050";
+}
+.icon-action-redo_c5023f5fd4a7e716:before {
+  content: "\e051";
+}
+.icon-wrench_483677169453923a:before {
+  content: "\e052";
+}
+.icon-umbrella_6c4e7bb4f152a6d7:before {
+  content: "\e053";
+}
+.icon-trash_a62c3e11fcdea5f5:before {
+  content: "\e054";
+}
+.icon-tag_e7ebbe14a04956dc:before {
+  content: "\e055";
+}
+.icon-support_e7471bd68619b6cb:before {
+  content: "\e056";
+}
+.icon-frame_fbf661953e579a66:before {
+  content: "\e038";
+}
+.icon-size-fullscreen_38ca8ffcba8dfb8a:before {
+  content: "\e057";
+}
+.icon-size-actual_31a580653d3c13b6:before {
+  content: "\e058";
+}
+.icon-shuffle_5752d4d6a6752a7b:before {
+  content: "\e059";
+}
+.icon-share-alt_bb4be2a5abcb2f7a:before {
+  content: "\e05a";
+}
+.icon-share_2ebb6bcb76c91d92:before {
+  content: "\e05b";
+}
+.icon-rocket_9b81fecb03626431:before {
+  content: "\e05c";
+}
+.icon-question_e31d7bc54f545b98:before {
+  content: "\e05d";
+}
+.icon-pie-chart_7073479aebf2bc05:before {
+  content: "\e05e";
+}
+.icon-pencil_efd2687efbb07188:before {
+  content: "\e05f";
+}
+.icon-note_6360e6e3ed6d6c04:before {
+  content: "\e060";
+}
+.icon-loop_c7afca3119e01392:before {
+  content: "\e064";
+}
+.icon-home_6e7ad9cfdce85dbd:before {
+  content: "\e069";
+}
+.icon-grid_4c945b5123f455c5:before {
+  content: "\e06a";
+}
+.icon-graph_7ed6c6bec615e0a1:before {
+  content: "\e06b";
+}
+.icon-microphone_b9afd6da50923b26:before {
+  content: "\e063";
+}
+.icon-music-tone-alt_2f84626c2e6eff90:before {
+  content: "\e061";
+}
+.icon-music-tone_3f3741de35ad5e0d:before {
+  content: "\e062";
+}
+.icon-earphones-alt_4d7b2d874ff55cf8:before {
+  content: "\e03c";
+}
+.icon-earphones_06eeb0a76e637aa6:before {
+  content: "\e03d";
+}
+.icon-equalizer_1086bcc2696fcb25:before {
+  content: "\e06c";
+}
+.icon-like_c1da0677b3dcb0e1:before {
+  content: "\e068";
+}
+.icon-dislike_612554437a59b6b4:before {
+  content: "\e06d";
+}
+.icon-control-start_3dfcb774232d2b97:before {
+  content: "\e06f";
+}
+.icon-control-rewind_68eab29b525f4f3c:before {
+  content: "\e070";
+}
+.icon-control-play_05afaf95793cea0b:before {
+  content: "\e071";
+}
+.icon-control-pause_b5ee284ac2a39be9:before {
+  content: "\e072";
+}
+.icon-control-forward_a4ab5ceb89e2c35d:before {
+  content: "\e073";
+}
+.icon-control-end_fa9fe175ed99dab1:before {
+  content: "\e074";
+}
+.icon-volume-1_b9edc81e9d00d2d3:before {
+  content: "\e09f";
+}
+.icon-volume-2_71cacd31057e69e6:before {
+  content: "\e0a0";
+}
+.icon-volume-off_6a2d0a85aa33ac51:before {
+  content: "\e0a1";
+}
+.icon-calendar_4aef0d2150e3e1ac:before {
+  content: "\e075";
+}
+.icon-bulb_eb7ea8ee582e71d4:before {
+  content: "\e076";
+}
+.icon-chart_0f19c55cacdd13e7:before {
+  content: "\e077";
+}
+.icon-ban_04ebe2b628707f5c:before {
+  content: "\e07c";
+}
+.icon-bubble_d82ca6878d37d74d:before {
+  content: "\e07d";
+}
+.icon-camrecorder_49229613c7d3c597:before {
+  content: "\e07e";
+}
+.icon-camera_d9107fcaa37ba43d:before {
+  content: "\e07f";
+}
+.icon-cloud-download_78cf3e6217db9061:before {
+  content: "\e083";
+}
+.icon-cloud-upload_b86b2ea7fb424b74:before {
+  content: "\e084";
+}
+.icon-envelope_bc8062277638115a:before {
+  content: "\e086";
+}
+.icon-eye_02e0aa9752eada56:before {
+  content: "\e087";
+}
+.icon-flag_9ccda411afc81b12:before {
+  content: "\e088";
+}
+.icon-heart_220f8aab26c42c86:before {
+  content: "\e08a";
+}
+.icon-info_4d71e0c198058e34:before {
+  content: "\e08b";
+}
+.icon-key_a73fb2e2d8324a5e:before {
+  content: "\e08c";
+}
+.icon-link_54a6f6beb68660d8:before {
+  content: "\e08d";
+}
+.icon-lock_78a57362f32a2f54:before {
+  content: "\e08e";
+}
+.icon-lock-open_cd0844f193cc8b86:before {
+  content: "\e08f";
+}
+.icon-magnifier_f2b83fbf3f9eede2:before {
+  content: "\e090";
+}
+.icon-magnifier-add_966f66ccccd2cdbe:before {
+  content: "\e091";
+}
+.icon-magnifier-remove_af3e3bfbe678845f:before {
+  content: "\e092";
+}
+.icon-paper-clip_db4f6821c544d3b1:before {
+  content: "\e093";
+}
+.icon-paper-plane_c8e7acebe9bf79de:before {
+  content: "\e094";
+}
+.icon-power_2d65a2ec271439cb:before {
+  content: "\e097";
+}
+.icon-refresh_1410ddd8d75b804e:before {
+  content: "\e098";
+}
+.icon-reload_2c237bf5161a84ca:before {
+  content: "\e099";
+}
+.icon-settings_54eb9a9f97fae1bf:before {
+  content: "\e09a";
+}
+.icon-star_b0e32fffaa927210:before {
+  content: "\e09b";
+}
+.icon-symbol-female_896637df2fb496e9:before {
+  content: "\e09c";
+}
+.icon-symbol-male_955608577a3600fb:before {
+  content: "\e09d";
+}
+.icon-target_ae100e13875d0f7d:before {
+  content: "\e09e";
+}
+.icon-credit-card_86c4dfb9cfcd769e:before {
+  content: "\e025";
+}
+.icon-paypal_8581b228186e06d6:before {
+  content: "\e608";
+}
+.icon-social-tumblr_3f8f4a4b6f69bbc0:before {
+  content: "\e00a";
+}
+.icon-social-twitter_2fd9f4e4da49e1ee:before {
+  content: "\e009";
+}
+.icon-social-facebook_1c28bf9047d8f163:before {
+  content: "\e00b";
+}
+.icon-social-instagram_1fb376fc2ddfa732:before {
+  content: "\e609";
+}
+.icon-social-linkedin_636d60ac8d26c929:before {
+  content: "\e60a";
+}
+.icon-social-pinterest_3ad241dc271d3547:before {
+  content: "\e60b";
+}
+.icon-social-github_2198e9c3c2c00c2f:before {
+  content: "\e60c";
+}
+.icon-social-google_969028dc34ba1c39:before {
+  content: "\e60d";
+}
+.icon-social-reddit_6963ebb619a96593:before {
+  content: "\e60e";
+}
+.icon-social-skype_ef142ad7988ff568:before {
+  content: "\e60f";
+}
+.icon-social-dribbble_387cc6168dfe57c3:before {
+  content: "\e00d";
+}
+.icon-social-behance_0e90a6cc3c6da63d:before {
+  content: "\e610";
+}
+.icon-social-foursqare_f172225456a83cb1:before {
+  content: "\e611";
+}
+.icon-social-soundcloud_bb5ef39455390463:before {
+  content: "\e612";
+}
+.icon-social-spotify_6eafd6434895bb56:before {
+  content: "\e613";
+}
+.icon-social-stumbleupon_19f4214f9debd221:before {
+  content: "\e614";
+}
+.icon-social-youtube_b42bde2f5cdc09db:before {
+  content: "\e008";
+}
+.icon-social-dropbox_f3bbe3d10c95ce06:before {
+  content: "\e00c";
+}
+.icon-social-vkontakte_6ad10cf75e6324f6:before {
+  content: "\e618";
+}
+.icon-social-steam_97a1a5f3a5aa5e82:before {
+  content: "\e620";
+}
